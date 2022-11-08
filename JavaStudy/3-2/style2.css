@@ -39,6 +39,7 @@ body {
 .center{
     float: left;
     width: 150px;
+    background-color: #ff9e6b;
 }
 .center-top{
     height: 50px;
