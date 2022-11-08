@@ -24,28 +24,28 @@
         width: 150px;
     }
     .contents{
-        height: 650px;
+        height: 450px;
     }
     .left {
         float: none;
         width: 150px;
-        height: 250px;
+        height: 100px;
     }
     .center-right{
         float: none;
-        height: 500px;
+        height: 350px;
     }
     .right-top{
-        height: 300px;
+        height: 250px;
     }
     .center{
         float: none;
         width: 150px;
+        padding-top: 100px;
     }
     .right {
         float: none;
-        width: 150px;
-
+        display: none;
     }
 
 }
