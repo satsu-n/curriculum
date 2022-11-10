@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+
+
+.header{
+	background-color: gray;
+
+}
+.login{
+	display: inline-block;
+	padding: 10px;
+	color: white;	
+}
+.time{
+	padding: 10px;
+	font-size: 10px;
+}
+
+.contents{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.input{
+	width: 300px;
+	padding: 4px;
+	font-size: 10px;
+}
+
+
+.footer{
+	background-color: gray;
+}
+.hoge{
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
