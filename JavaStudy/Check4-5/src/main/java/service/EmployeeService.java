@@ -67,7 +67,7 @@ import bean.EmployeeBean;
    // preparedStatementに実行したいSQLを格納
   preparedStatement = connection.prepareStatement(SQL_UPDATE);
    // 問④ preparedStatementを使って、一番目のindexに今の時間をセットしてください。2番目のindexにIDをセットしてください。
-  preparedStatement.setString(1,login_time);
+  preparedStatement.setString(1, login_time);
   preparedStatement.setString(2, id);
    // 問⑤ UPDATEを実行する文を記述
   preparedStatement.executeUpdate();
