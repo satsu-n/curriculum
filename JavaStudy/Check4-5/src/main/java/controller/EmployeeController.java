@@ -21,8 +21,8 @@ import service.EmployeeService;
 
   try {
    // 問① index.htmlから送信されたIDとPassWordの値を取得できるように修正しましょう。
-  String id = request.getParameter("postgres");
-  String password = request.getParameter("postgres");
+  String id = request.getParameter("id");
+  String password = request.getParameter("pass");
 
   /*
   * IDとPassWordと元に、社員情報を検索する関数の呼び出し、結果をJSPに渡す処理
