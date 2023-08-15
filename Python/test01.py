@@ -1,23 +1,25 @@
 #test01.py
 
-import random
-answer = random.randint(1, 10)
+import pandas as pd
+import matplotlib.pyplot as plt
 
-while True:  # 無限ループ
-    try:
-        number = int(input('10までの数値を入力してください: '))
-        # 問①：ValueError例外を処理するコードを記述してください。
-    except ValueError:
-        print('数字以外が入力されました。数字のみを入力してください')
+plt.style.use('seaborn-darkgrid')
 
-        continue
-    if answer< number:
-        print('もっと小さな数値です')
-        # 問②：画像のように表示するように、コードを記述してください。
-    elif answer > number:
-        print('もっと大きな数値です')
+#ここに必要な記述をしましょう
 
-    else:
-        break  # 変数answerの値と変数numberの値が等しければ終了
+fig = plt.figure()
 
-print('正解！')
+
+df = pd.read_csv('test01.csv')
+#左
+ax = fig.add_subplot(1, 2, 1)
+ax.plot(df['Date'], df['OfficeWork'],label = "Time")
+ax.set_title("新屋の直近3日間の勤務時間",fontname='IPAexGothic')
+
+#右
+bx = fig.add_subplot(1, 2, 2)
+bx.plot(df['Date'], df['Study'],label = "Time")
+bx.set_title("新屋の直近3日間の勉強時間",fontname='IPAexGothic')
+
+plt.tight_layout()
+plt.show()
