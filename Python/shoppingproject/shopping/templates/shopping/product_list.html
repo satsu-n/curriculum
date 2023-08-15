@@ -1,0 +1,21 @@
+<!--shoppingproject/shopping/templates/shopping/product_list.htmlとしてコピーして下さい。
+-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ECサイト - 商品詳細</title>
+</head>
+
+<body>
+<h3>商品一覧</h3>
+<a href="{% url 'product_cart' %}">カート内一覧</a>     <!--追加-->
+<hr>
+<ul>
+{% for product in products %}
+<li>({{ product.category.name }}) <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a></li>
+{% endfor %}
+	</ul>
+
+</body>
+</html>
